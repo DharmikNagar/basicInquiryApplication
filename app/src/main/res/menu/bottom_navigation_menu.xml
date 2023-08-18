@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/inquiryList"
+        android:icon="@drawable/baseline_view_list_24"
+        android:title="Inquiry List" />
+    <item
+        android:id="@+id/inquiryForm"
+        android:icon="@drawable/baseline_dynamic_form_24"
+        android:title="Add Inquiry" />
+    <item
+        android:id="@+id/courses"
+        android:icon="@drawable/baseline_edit_note_24"
+        android:title="Courses" />
+</menu>

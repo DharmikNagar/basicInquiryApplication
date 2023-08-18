@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InquiryApplication</string>
+    <string name="demoString">Demo String</string>
+    <string name="inquiryName">Name</string>
+    <string name="inquiryNumber">Number</string>
+    <string name="inquiryEmail">Email</string>
+    <string name="inquiryCourse">Course</string>
+    <string name="inquiryDate">Inquiry Date</string>
+    <string name="btnSubmit">Submit</string>
+
+</resources>

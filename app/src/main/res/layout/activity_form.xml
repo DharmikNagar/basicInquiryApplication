@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inquiryform.activity.FormActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="@color/pastel_blue"
+        app:titleTextColor="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fillInputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        style="@style/inquiry_spinner"
+        android:hint="@string/inquiryName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fillInputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inquiry_spinner"
+        android:layout_below="@+id/fillInputName"
+        android:hint="@string/inquiryNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_number"
+            android:layout_width="match_parent"
+            android:maxLength="10"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fillInputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inquiry_spinner"
+        android:layout_below="@+id/fillInputNumber"
+        android:hint="@string/inquiryEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fillInquiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inquiry_spinner"
+        android:layout_below="@+id/fillInputEmail"
+        android:hint="@string/inquiryDate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_date_inquiry"
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spn_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inquiry_spinner"
+        android:layout_below="@+id/fillInquiryDate"
+        android:background="@drawable/input_border"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/spn_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sp_25"
+        android:background="@drawable/btn_style"
+        />
+
+    <include layout="@layout/fragment_bottom_menus" />
+
+</RelativeLayout>
